@@ -32,6 +32,11 @@
       inputs.home-manager.follows = "hm";
     };
 
+    anyrun = {
+      url = "github:Kirottu/anyrun";
+      inputs.nixpkgs.follows = "nixpkgs";
+    }
+
     fu.url = "github:numtide/flake-utils";
 
     hm = {
