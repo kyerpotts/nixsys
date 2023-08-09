@@ -11,7 +11,7 @@
   };
 
   # Configure console keymap
-  console.keyMap = "us"
+  console.keyMap = "us";
 
   # Hardware acceleration
   hardware.opengl.enable = true;
