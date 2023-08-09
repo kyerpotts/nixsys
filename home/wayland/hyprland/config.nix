@@ -27,7 +27,7 @@ in {
         # focus change on cursor move
         follow_mouse = 1;
         accel_profile = flat;
-        touchpad {
+        touchpad = {
           scroll_factor = 0.3;
         };
       };
