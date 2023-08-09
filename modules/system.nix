@@ -18,6 +18,7 @@
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   # Enable ssh
   services.openssh.enable = true;
