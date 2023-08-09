@@ -23,13 +23,12 @@ in {
       ];
       xwayland = { force_zero_scaling = true; };
       input = {
-        kb_layout = us
-
+        kb_layout = us;
         # focus change on cursor move
-        follow_mouse = 1
-        accel_profile = flat
+        follow_mouse = 1;
+        accel_profile = flat;
         touchpad {
-          scroll_factor = 0.3
+          scroll_factor = 0.3;
         };
       };
       misc = {
