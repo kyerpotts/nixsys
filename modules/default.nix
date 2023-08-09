@@ -28,5 +28,5 @@ let
       desktop = import ./desktop.nix;
       greetd = import ./greetd.nix;
       nix = import ./nix.nix;
-    }
+    };
   }
