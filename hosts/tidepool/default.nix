@@ -1,5 +1,5 @@
 { config, pkgs, self, ... }: {
-  imports = [ /etc/nixos/hardware-configuration.nix ];
+  imports = [ ./hardware-configuration.nix ];
 
   boot = {
     # load modules on boot
