@@ -10,6 +10,6 @@
 
       xwaylandvideobridge =
       pkgs.libsForQt5.callPackage ./xwaylandvideobridge { };
-    }
-  }
+    };
+  };
 }
