@@ -27,7 +27,7 @@
 
   environment.systemPackages = [ config.boot.kernelPackages.cpupower ];
 
-  networking.hostname = "tidepool";
+  # networking.hostname = "tidepool";
 
   programs = {
     # enable hyprland
