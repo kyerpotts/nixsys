@@ -46,7 +46,6 @@
     nodePackages.pnpm
 
     # java
-    jdk8
     jdk11
     jdk17
 
