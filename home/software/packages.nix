@@ -49,7 +49,6 @@
     jdk17
 
     # python
-    python39
     python311
   ];
 }
