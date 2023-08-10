@@ -6,7 +6,7 @@
       # instant repl with automatic flake loading
       repl = pkgs.callPackage ./repl { };
 
-      catpuccin-plymouth = pkgs.callPackage ./catpuccin-plymouth { };
+      catppuccin-plymouth = pkgs.callPackage ./catppuccin-plymouth { };
 
       xwaylandvideobridge =
       pkgs.libsForQt5.callPackage ./xwaylandvideobridge { };
