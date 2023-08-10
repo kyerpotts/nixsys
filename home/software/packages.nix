@@ -46,7 +46,6 @@
     nodePackages.pnpm
 
     # java
-    jdk11
     jdk17
 
     # python
