@@ -3,10 +3,10 @@
 {
   imports = [ ./wlogout.nix ];
 
-  home.file.".config" = {
-    source = ./config;
-    recursive = true;
-  };
+  # home.file.".config" = {
+  #   source = ./config;
+  #   recursive = true;
+  # };
 
   xdg.configFile = {
     "btop/themes/catppuccin_mocha.theme".source = pkgs.fetchurl {
