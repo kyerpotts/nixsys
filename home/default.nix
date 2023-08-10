@@ -3,7 +3,7 @@
     username = "squidmilk";
     homeDirectory = "/home/squidmilk";
     stateVersion = "23.05";
-    extraOutputToInstall = [ "doc" "devdoc" ];
+    # extraOutputToInstall = [ "doc" "devdoc" ];
   };
 
   # disable manuals as nmd fails to build often

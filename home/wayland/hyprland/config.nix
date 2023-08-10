@@ -23,16 +23,16 @@ in {
       ];
       xwayland = { force_zero_scaling = true; };
       input = {
-        kb_layout = us;
+        kb_layout = "us";
         # focus change on cursor move
         follow_mouse = 1;
-        accel_profile = flat;
+        accel_profile = "flat";
         touchpad = {
           scroll_factor = 0.3;
         };
       };
       misc = {
-        disable_autoreload = false
+        disable_autoreload = false;
         animate_mouse_windowdragging = true;
         vrr = 0;
         vfr = true;
@@ -50,7 +50,7 @@ in {
         # group borders
         "col.group_border_active" = "rgb(${colors.pink})";
         "col.group_border" = "rgb(${colors.surface0})";
-        "no_border_on_floating" = false
+        "no_border_on_floating" = false;
         layout = "dwindle";
       };
       decoration = {
@@ -93,7 +93,7 @@ in {
         ];
       };
       dwindle = {
-        no_gaps_when_only = false
+        no_gaps_when_only = false;
         pseudotile = true;
         preserve_split = true;
       };
@@ -101,7 +101,7 @@ in {
 
       "$VIDEODIR" = "$HOME/Videos";
       "$NOTIFY" = "notify-send -h string:x-canonical-private-synchonouse:hypr-cfg -u low";
-      "$SCREENSHOT" = "mkdir -p ~/Screenshots; grim -t png -g "$(slurp)" ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png";
+      "$SCREENSHOT" = "mkdir -p ~/Screenshots; grim -t png -g '$(slurp)' ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png";
 
       bind = [
         "$MOD, Escape, exec, wlogout -p layer-shell"

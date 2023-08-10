@@ -6,7 +6,7 @@
     ./hyprland
     ./waybar
     ./swayidle.nix
-    ./swaylock
+    ./swaylock.nix
     ./swww.nix
   ];
 

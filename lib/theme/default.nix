@@ -1,6 +1,5 @@
 {
-  colorlib,
-  lib,
+  colorlib, lib,
 }: rec {
   colors = import ./colors.nix;
   # #RRGGBB
@@ -23,5 +22,5 @@
     name = "wallpaper-${sha256}.gif";
     url = "https://raw.githubusercontent.com/redyf/wallpapers/main/waterfall.gif";
     sha256 = "cf41761fa61a80101fdb31eb96abbafa9a0a6370f060d29055f25c75bcf0cf42";
-  }
+  };
 }

@@ -51,11 +51,11 @@
     };
     "hyprland/window" = {
       format = "{title}";
-      rewrite = [
-       "(.*) - Mozilla Firefox": "$1"
-       "(.*) - nvim": "$1"
-       "(.*) - zsh": "[$1]"
-      ];
+      # rewrite = [
+      #  "(.*) - Mozilla Firefox": "$1"
+      #  "(.*) - nvim": "$1"
+      #  "(.*) - zsh": "[$1]"
+      # ];
     };
     "cava#left" = {
       framerate = 60;
@@ -73,14 +73,14 @@
       waves = false;
       input_delay = 2;
       format-icons = [
-        "<span foreground='#${custom.primary_accent}'>▁</span>"
-        "<span foreground='#${custom.primary_accent}'>▂</span>"
-        "<span foreground='#${custom.primary_accent}'>▃</span>"
-        "<span foreground='#${custom.primary_accent}'>▄</span>"
-        "<span foreground='#${custom.secondary_accent}'>▅</span>"
-        "<span foreground='#${custom.secondary_accent}'>▆</span>"
-        "<span foreground='#${custom.secondary_accent}'>▇</span>"
-        "<span foreground='#${custom.secondary_accent}'>█</span>"
+        "<span foreground='#cba6f7'>▁</span>"
+        "<span foreground='#cba6f7'>▂</span>"
+        "<span foreground='#cba6f7'>▃</span>"
+        "<span foreground='#cba6f7'>▄</span>"
+        "<span foreground='#89b4fa'>▅</span>"
+        "<span foreground='#89b4fa'>▆</span>"
+        "<span foreground='#89b4fa'>▇</span>"
+        "<span foreground='#89b4fa'>█</span>"
       ];
     };
     "custom/launcher" = {
@@ -184,5 +184,5 @@
       on-scroll-down = "wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 1%-";
       on-click-right = "pavucontrol";
     };
-  }
+  };
 }
