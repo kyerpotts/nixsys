@@ -154,6 +154,15 @@
       tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
       format-linked = "{ifname} (No IP)";
       format-disconnected = "󰖪 0% ";
+      on-click = "nm-applet";
+    };
+    bluetooth = {
+      format = "󰂯{status}";
+      format-disabled "󰂲";
+      format-connected "󰂱";
+	    tooltip-format = "{controller_alias}\t{controller_address}";
+	    tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
+	    on-click = "blueberry";
     };
     tray = {
       icon-size = 20;
@@ -168,7 +177,7 @@
     };
     pulseaudio = {
       format = "{icon} {volume}%";
-      format-bluetooth = "{icon} {volume}%";
+      format-bluetooth = "{icon}󰂱 {volume}%";
       format-source = " {volume}%";
       format-muted = "󰝟";
       format-source-muted = " {volume}%";

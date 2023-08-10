@@ -1,7 +1,7 @@
 { pkgs, self', ... }: {
   home.packages = with pkgs; [
     # messaging
-    self'.packages.inkdrop
+    #webcord
 
     pavucontrol
     neovim-unwrapped
@@ -9,6 +9,7 @@
     xfce.thunar
     xfce.thunar-archive-plugin
     ps_mem
+    pulseaudio
 
     # misc
     libnotify
@@ -22,6 +23,10 @@
     rizin
     xcolor
     htop
+    blueberry
+    bluez
+    networkmanager
+    networkmanagerapplet
 
     glow
     # libsixel # image support for foot
