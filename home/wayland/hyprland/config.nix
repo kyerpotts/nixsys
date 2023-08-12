@@ -56,6 +56,7 @@ in {
       decoration = {
         rounding = 5;
         multisample_edges = true;
+        blur_new_optimizations = true;
         blur = {
           size = 6;
           passes = 3;
@@ -66,7 +67,6 @@ in {
           brightness = "1.2";
           xray = true;
         };
-        blur_new_optimizations = true;
         drop_shadow = true;
         shadow_ignore_window = true;
         shadow_offset = "0 8";
