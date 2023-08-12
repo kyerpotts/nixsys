@@ -17,7 +17,7 @@ let
           module_args
           ./system.nix
           ./security.nix
-          ./greetd.nix
+          # ./greetd.nix
           ./nix.nix
         ];
       };
