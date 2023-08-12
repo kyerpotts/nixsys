@@ -61,7 +61,7 @@ in ''
     background-size: 400% 400%;
   }
 
-  #custom-date, #clock, #battery, #pulseaudio, #network, #custom-randwall, #custom-launcher {
+  #custom-date, #clock, #battery, #pulseaudio, #network, #custom-randwall, #tray, #backlight, #bluetooth, #custom-launcher {
   	background: transparent;
   	padding: 5px 5px 5px 5px;
   	margin: 5px 5px 5px 5px;
@@ -86,11 +86,6 @@ in ''
 
   #tray {
       color: #cdd6f4;
-      border-radius: 0px 0px 0px 0px;
-      margin: 5px;
-      margin-left: 0px;
-      margin-right: 0px;
-      padding: 0px 0px;
       /*border-right: solid 1px #282738;*/
   }
 
@@ -125,11 +120,6 @@ in ''
 
   #backlight {
       color: #cdd6f4;
-      border-radius: 0px 0px 0px 0px;
-      margin: 5px;
-      margin-left: 0px;
-      margin-right: 0px;
-      padding: 0px 0px;
   }
 
   #network {
