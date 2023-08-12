@@ -18,7 +18,7 @@
   size = 10;
   };
 
-  wallpaper = "~/Wallpapers/waterfall.gif"
+  wallpaper = "~/Wallpapers/waterfall.gif";
 
   # wallpaper = builtins.fetchurl rec {
   #   name = "wallpaper-${sha256}.gif";
