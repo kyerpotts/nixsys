@@ -57,14 +57,13 @@ in {
         rounding = 5;
         multisample_edges = true;
         blur = {
-          size = "6";
-          passes = "3";
-          new_optimizations = "true";
+          size = 3;
+          passes = 2;
+          # new_optimizations = "true";
           ignore_opacity = "true";
-          noise = "0.0117";
-          contrast = "1.1";
-          brightness = "1.2";
-          xray = "true";
+          # noise = "0.0117";
+          # contrast = "1.1";
+          # brightness = "1.2";
         };
         drop_shadow = true;
         shadow_ignore_window = true;
