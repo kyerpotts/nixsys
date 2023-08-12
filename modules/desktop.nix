@@ -76,7 +76,6 @@
       enable = true;
       displayManager.sddm.enable = true;
       excludePackages = [ pkgs.xterm ];
-      libinput.enable = true;
     };
 
     logind.extraConfig = ''
