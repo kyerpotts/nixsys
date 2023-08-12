@@ -15,6 +15,7 @@
     trash-cli
     zoxide
     fzf
+    lazygit
 
     # file managers
     lf
