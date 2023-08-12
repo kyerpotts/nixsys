@@ -21,11 +21,11 @@
       "hyprland/window"
     ];
     modules-right = [
-      # "tray"
       "battery"
       "pulseaudio"
       "bluetooth"
-      "network"
+      # "network"
+      "tray"
       "backlight"
       "clock"
     ];
