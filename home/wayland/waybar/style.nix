@@ -34,6 +34,7 @@ in ''
     font-weight: normal;
     font-style: normal;
   }
+
   #workspaces button {
       padding: 0px 5px;
       margin: 0px 3px;
@@ -44,7 +45,7 @@ in ''
   }
 
   #workspaces button.active {
-      color: #cdd6f4;
+      color: #2f354a;
       background-color: #cdd6f4;
       border-radius: 16px;
       min-width: 50px;
@@ -54,7 +55,7 @@ in ''
 
   #workspaces button:hover {
   	background-color: #cdd6f4;
-  	color: #cdd6f4;
+  	color: #2f354a;
   	border-radius: 16px;
     min-width: 50px;
     background-size: 400% 400%;
@@ -158,7 +159,7 @@ in ''
 
   #custom-launcher {
       color: #cdd6f4;
-      background-color: #0c0e0f;
+      background-color: transparent;
       border-radius: 0px 24px 0px 0px;
       margin: 0px 0px 0px 0px;
       padding: 0 20px 0 13px;

@@ -10,6 +10,7 @@
     margin-right = 0;
     modules-left = [
       "custom/launcher"
+      "wlr/workspaces"
       "custom/playerctl#backward"
       "custom/playerctl#play"
       "custom/playerctl#forward"
@@ -17,15 +18,15 @@
       "cava#left"
     ];
     modules-center = [
-      "wlr/workspaces"
       "hyprland/window"
     ];
     modules-right = [
-      "tray"
+      # "tray"
       "battery"
       "pulseaudio"
       "bluetooth"
       "network"
+      "backlight"
       "clock"
     ];
     clock = {
@@ -86,6 +87,7 @@
     "custom/launcher" = {
       format = "";
       on-click = "pkill .${default.launcher}-wrapped || run-as-service ${default.launcher}";
+      on-right-click "wlogout -p layer-shell";
       tooltip = "false";
     };
     "custom/playerctl#backward" = {
@@ -93,6 +95,7 @@
       on-click= "playerctl previous";
       on-scroll-up = "playerctl volume .5+";
       on-scroll-down = "playerctl volume .5-";
+      tooltip = "false";
     };
     "custom/playerctl#play"= {
       format= "{icon}";
@@ -101,6 +104,7 @@
       on-click= "playerctl play-pause";
       on-scroll-up = "playerctl volume .05+";
       on-scroll-down = "playerctl volume .05-";
+      tooltip = "false";
       format-icons= {
         Playing = "<span>󰏥 </span>";
         Paused = "<span> </span>";
@@ -112,6 +116,7 @@
       on-click= "playerctl next";
       on-scroll-up = "playerctl volume .05+";
       on-scroll-down = "playerctl volume .05-";
+      tooltip = "false";
     };
     "custom/playerlabel"= {
       format= "<span>󰎈 {} 󰎈</span>";
@@ -119,6 +124,7 @@
       max-length= 40;
       exec = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
       on-click= "";
+      tooltip = "false";
     };
     battery = {
       states = {
