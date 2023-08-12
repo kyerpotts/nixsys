@@ -25,7 +25,7 @@
     DefaultTimeoutStopSec=10s
     '';
 
-  environment.systemPackages = [ config.boot.kernelPackages.cpupower kitty ];
+  environment.systemPackages = [ config.boot.kernelPackages.cpupower pkgs.kitty ];
 
   # networking.hostname = "tidepool";
 
