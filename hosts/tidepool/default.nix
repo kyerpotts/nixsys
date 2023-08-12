@@ -25,9 +25,12 @@
     DefaultTimeoutStopSec=10s
     '';
 
+  # networking.hostname = "tidepool";
+  networking.networkmanager.enable = true;
+
+
   environment.systemPackages = [ config.boot.kernelPackages.cpupower pkgs.kitty ];
 
-  # networking.hostname = "tidepool";
 
   programs = {
     # enable hyprland

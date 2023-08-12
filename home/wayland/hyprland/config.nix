@@ -188,7 +188,7 @@ in {
         "opacity 0.90 0.90,class:^(org.wezfurlong.wezterm)$"
         "opacity 0.90 0.90,class:^(firefox)$"
         # may need to change this for spotify-tui
-        "opacity 0.80 0.80,class:^(Spotify)$"
+        # "opacity 0.80 0.80,class:^(Spotify)$"
         "opacity 0.80 0.80,class:^(thunar)$"
         "opacity 0.80 0.80,class:^(file-roller)$"
         "opacity 0.80 0.80,class:^(nwg-look)$"
@@ -222,7 +222,7 @@ in {
         "noshadow, floating:0"
 
         # This line may be redundant if using spotify-tui
-        "title, title:^(Spotify)$"
+        # "title, title:^(Spotify)$"
 
         "idleinhibit focus, class:^(mpv|.+exe)$"
         "idleinhibit focus, class:^(firefox)$, title:^(.*YouTube.*)$"
