@@ -87,7 +87,7 @@
     "custom/launcher" = {
       format = "";
       on-click = "pkill .${default.launcher}-wrapped || run-as-service ${default.launcher}";
-      on-right-click "wlogout -p layer-shell";
+      on-right-click = "wlogout -p layer-shell";
       tooltip = "false";
     };
     "custom/playerctl#backward" = {
@@ -160,7 +160,7 @@
       tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
       format-linked = "{ifname} (No IP)";
       format-disconnected = "󰖪 0% ";
-      on-click = "exec nm-applet --indicator";
+      on-click = "nm-applet --indicator";
     };
     bluetooth = {
       format = "󰂯{status}";
