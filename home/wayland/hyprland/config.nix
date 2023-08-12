@@ -15,6 +15,7 @@ in {
       "wlsunset -t 5200 -S 9:00 -s 19:30"
       "waybar"
       "dunst"
+      "nm-applet"
       "xwaylandvideobridge"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"

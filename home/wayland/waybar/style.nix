@@ -85,10 +85,12 @@ in ''
   }
 
   #tray {
-      background: #0c0e0f;
-      margin: 5px 5px 5px 5px;
-      border-radius: 16px;
-      padding: 0px 5px;
+      color: #cdd6f4;
+      border-radius: 0px 0px 0px 0px;
+      margin: 5px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0px 0px;
       /*border-right: solid 1px #282738;*/
   }
 
