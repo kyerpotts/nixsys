@@ -72,10 +72,11 @@
     # geoclue2.enable = true;
     gnome.gnome-keyring.enable = true;
 
-    xserver.enable = {
+    xserver = {
       enable = true;
       displayManager.sddm.enable = true;
       excludePackages = [ pkgs.xterm ];
+      libinput.enable = true;
     };
 
     logind.extraConfig = ''
