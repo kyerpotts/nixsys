@@ -56,7 +56,6 @@ in {
       decoration = {
         rounding = 5;
         multisample_edges = true;
-        blur_new_optimizations = true;
         blur = {
           size = 6;
           passes = 3;
