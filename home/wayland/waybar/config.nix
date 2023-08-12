@@ -160,7 +160,7 @@
       tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
       format-linked = "{ifname} (No IP)";
       format-disconnected = "󰖪 0% ";
-      on-click = "nm-applet --indicator";
+      on-click = "nm-applet";
     };
     bluetooth = {
       format = "󰂯{status}";
