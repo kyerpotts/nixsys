@@ -154,17 +154,6 @@ in {
         "$MOD, L, movefocus, r"
         "$MOD, J, movefocus, u"
         "$MOD, K, movefocus, d"
-
-        # Resize window
-        #TODO: this might not work
-        "$MOD, Z, submap, resize"
-        "submap = resize"
-        "binde = , right, resizeactive, 10 0"
-        "binde = , left, resizeactive, -10 0"
-        "binde = , up, resizeactive, 0 -10"
-        "binde = , down, resizeactive, 0 10"
-        "binde = , escape, submap, reset"
-        "submap = reset"
       ];
       bindm = [ "$MOD, mouse:272, movewindow" "$MOD, mouse:273, resizewindow"];
 
@@ -243,5 +232,15 @@ in {
         "ignorezero, ^(gtk-layer-shell|anyrun)$"
       ];
     };
+    extraConfig = ''
+      $MOD, Z, submap, resize
+      submap = resize
+      binde = , right, resizeactive, 10 0
+      binde = , left, resizeactive, -10 0
+      binde = , up, resizeactive, 0 -10
+      binde = , down, resizeactive, 0 10
+      bind = , escape, submap, reset
+      submap = reset;
+    '';
   };
 }

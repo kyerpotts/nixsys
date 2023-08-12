@@ -1,5 +1,4 @@
-{ default, ... }:
-{
+{ default, ... }: {
   programs.wezterm = {
     enable = true;
     extraConfig = ''
@@ -18,19 +17,20 @@
        -- Font config
         font = font_with_fallback(font_name),
         font_rules = {
-          {
-            italic = true,
-            font = font_with_fallback(font_name, { italic = true }),
-          },
-          {
-            italic = false,
-            font = font_with_fallback(font_name, { bold = true }),
-          },
-          {
-            intensity = "Bold",
-            font = font_with_fallback(font_name, { bold = true }),
-          },
-        },
+           {
+      	     italic = true,
+      	     font = font_with_fallback(font_name, { italic = true }),
+           },
+           {
+      	     italic = false,
+      	     font = font_with_fallback(font_name, { bold = true }),
+           },
+           {
+      	     intensity = "Bold",
+      	     font = font_with_fallback(font_name, { bold = true }),
+           },
+         },
+
         color_scheme = "Catppuccin Mocha",
         window_background_opacity = ${toString default.terminal.opacity},
         warn_about_missing_glyphs = false,
@@ -72,9 +72,7 @@
           },
           },
             window_close_confirmation = "NeverPrompt",
-          },
-        }
-      }
+          }
     '';
   };
 }
