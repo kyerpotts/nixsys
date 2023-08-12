@@ -18,9 +18,12 @@
   size = 10;
   };
 
-  wallpaper = builtins.fetchurl rec {
-    name = "wallpaper-${sha256}.gif";
-    url = "https://raw.githubusercontent.com/redyf/wallpapers/main/waterfall.gif";
-    sha256 = "cf41761fa61a80101fdb31eb96abbafa9a0a6370f060d29055f25c75bcf0cf42";
-  };
+  wallpaper = "~/Wallpapers/waterfall.gif"
+
+  # wallpaper = builtins.fetchurl rec {
+  #   name = "wallpaper-${sha256}.gif";
+  #   # url = "https://raw.githubusercontent.com/redyf/wallpapers/main/waterfall.gif";
+  #   url = "~/Wallpapers/waterfall.gif";
+  #   sha256 = "cf41761fa61a80101fdb31eb96abbafa9a0a6370f060d29055f25c75bcf0cf42";
+  # };
 }
