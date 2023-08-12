@@ -44,7 +44,7 @@ in {
         gaps_out = 5;
         border_size = 2;
         "col.active_border" =
-        "rgb(${colors.base}) rgb(${colors.suface2}) 270deg";
+        "rgb(${colors.base}) rgb(${colors.surface2}) 270deg";
         "col.inactive_border" =
         "rgb(${colors.crust}) rgb(${colors.mantle}) 270deg";
         # group borders
