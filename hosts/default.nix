@@ -12,7 +12,7 @@
         modules = [
           ./tidepool
           ../modules/desktop.nix
-          ../modules/greetd.nix
+          # ../modules/greetd.nix
           {
             home-manager.users.squidmilk.imports =
               homeImports."squidmilk@tidepool";
