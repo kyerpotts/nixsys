@@ -57,7 +57,6 @@ in {
         rounding = 5;
         multisample_edges = true;
         blur = {
-          size = 6;
           passes = 3;
           ignore_opacity = true;
           noise = "0.0117";
