@@ -36,7 +36,7 @@ in {
         animate_mouse_windowdragging = true;
         vrr = 0;
         vfr = true;
-        disable_splash_rendering = true;
+        # disable_splash_rendering = true;
       };
 
       general = {
@@ -44,7 +44,7 @@ in {
         gaps_out = 5;
         border_size = 2;
         "col.active_border" =
-        "rgb(${colors.base}) rgb(${colors.mauve}) 270deg";
+        "rgb(${colors.base}) rgb(${colors.suface2}) 270deg";
         "col.inactive_border" =
         "rgb(${colors.crust}) rgb(${colors.mantle}) 270deg";
         # group borders
@@ -57,14 +57,14 @@ in {
         rounding = 5;
         multisample_edges = true;
         blur = {
-          size = 6;
-          passes = 3;
+          # size = 6;
+          # passes = 3;
           # new_optimizations = true;
-          ignore_opacity = true;
-          noise = "0.0117";
-          contrast = "1.1";
-          brightness = "1.2";
-          xray = true;
+          # ignore_opacity = true;
+          # noise = "0.0117";
+          # contrast = "1.1";
+          # brightness = "1.2";
+          # xray = true;
         };
         drop_shadow = true;
         shadow_ignore_window = true;
