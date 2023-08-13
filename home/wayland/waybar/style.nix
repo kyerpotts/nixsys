@@ -54,7 +54,7 @@ in ''
   }
 
   #workspaces button:hover {
-  	background-color: #cba6f7;
+  	background-color: #cdd6f4;
   	color: #2f354a;
   	border-radius: 16px;
     min-width: 50px;

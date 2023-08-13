@@ -22,6 +22,9 @@
       init = { defaultBranch = "main"; };
       diff.colorMoved = "default";
       merge.conflictstyle = "diff3";
+      credential.helper = "${
+        pkgs.git.override { withLibsecret = true; }
+      } /bin/git-credential-libsecret";
     };
 
     aliases = {

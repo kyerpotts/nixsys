@@ -17,6 +17,7 @@ in {
       "dunst"
       "nm-applet"
       "swww init"
+      "swww img ~/Wallpapers/waterfall.gif"
       "xwaylandvideobridge"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
@@ -24,6 +25,10 @@ in {
       "echo 'Xft.dpi: 130 | xrdb -merge"
       ];
       xwayland = { force_zero_scaling = true; };
+      monitor = [
+        ",preferred,auto,auto"
+        "eDP-1,1920x1080@60,0x0,1"
+      ];
       input = {
         kb_layout = "us";
         # focus change on cursor move
@@ -36,9 +41,10 @@ in {
       misc = {
         disable_autoreload = false;
         animate_mouse_windowdragging = true;
-        vrr = 0;
+        vrr = 1;
         vfr = true;
-        # disable_splash_rendering = true;
+        disable_splash_rendering = true;
+        disable_hyprland_logo = true;
       };
 
       general = {
@@ -115,10 +121,12 @@ in {
         "$MOD, D, exec, pkill .${default.launcher}-wrapped || run-as-service ${default.launcher}"
         "$MOD, Return, exec, run-as-service ${default.terminal.name}"
         "$MOD, W, exec, firefox"
+        "$MOD, M, exec, WebCord"
+        "$MOD, N, exec, Obsidian"
         "$MOD, E, exec, run-as-service ${default.terminal.name} -e lf"
 
 
-        "$MODSHIFT, L, exec, loginctl lock-session"
+        "$MOD, L, exec, loginctl lock-session"
         "$MOD, Q, killactive"
         "$MODSHIFT, Q, exit"
         "$MOD, F, fullscreen"
@@ -188,9 +196,11 @@ in {
         "opacity 0.80 0.70,class:^(pavucontrol)$"
         "opacity 0.80 0.70,class:^(org.kde.polkit-kde-authentication-agent-1)$"
         "opacity 0.80 0.80,class:^(code-url-handler)$"
+        "opacity 0.80 0.80,class:^(blueberry)$"
         # "opacity 0.80 0.80,title:^(Spotify)$"
 
         "float,class:^(org.kde.polkit-kde-authentication-agent-1)$"
+        "float,class:^(blueberry)$"
         "float,class:^(pavucontrol)$"
         "float,title:^(Media viewer)$"
         "float,title:^(Volume Control)$"
