@@ -121,8 +121,8 @@ in {
         "$MOD, D, exec, pkill .${default.launcher}-wrapped || run-as-service ${default.launcher}"
         "$MOD, Return, exec, run-as-service ${default.terminal.name}"
         "$MOD, W, exec, firefox"
-        "$MOD, M, exec, WebCord"
-        "$MOD, N, exec, Obsidian"
+        "$MOD, M, exec, webcord"
+        "$MOD, N, exec, obsidian"
         "$MOD, E, exec, run-as-service ${default.terminal.name} -e lf"
 
 

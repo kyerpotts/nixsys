@@ -15,7 +15,7 @@
   font = "JetBrainsMono Nerd Font";
   name = "wezterm";
   opacity = 0.8;
-  size = 10;
+  size = 16;
   };
 
   wallpaper = "~/Wallpapers/waterfall.gif";
