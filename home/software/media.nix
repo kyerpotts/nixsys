@@ -30,15 +30,17 @@
       enable = true;
       package = pkgs.spotifyd.override { withMpris = true; };
       settings.global = {
+        username = "12124028573";
+        password = "StarTickler22";
         autoplay = true;
         backend = "pulseaudio";
         bitrate = 320;
         cache_path = "${config.xdg.cacheHome}/spotifyd";
         device_type = "computer";
         initial_volume = "100";
-        password_cmd = "tail -1 /run/agenix/spotify";
+        # password_cmd = "tail -1 /run/agenix/spotify";
         use_mpris = true;
-        username_cmd = "head -1 /run/agenix/spotify";
+        # username_cmd = "head -1 /run/agenix/spotify";
         volume_normalisation = false;
       };
     };
