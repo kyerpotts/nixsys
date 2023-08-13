@@ -125,8 +125,7 @@ in {
         "$MOD, N, exec, obsidian"
         "$MOD, E, exec, run-as-service ${default.terminal.name} -e lf"
 
-
-        "$MOD, L, exec, loginctl lock-session"
+        "$MODSHIFT, L, exec, loginctl lock-session"
         "$MOD, Q, killactive"
         "$MODSHIFT, Q, exit"
         "$MOD, F, fullscreen"

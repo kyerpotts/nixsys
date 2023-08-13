@@ -6,6 +6,7 @@
     ./neofetch.nix
     ./dunst.nix
     ./files
+    ./firefox
     ./media.nix
     ./git.nix
     ./gtk.nix
