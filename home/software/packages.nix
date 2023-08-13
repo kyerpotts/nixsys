@@ -10,7 +10,6 @@
     xfce.thunar-archive-plugin
     ps_mem
     pulseaudio
-    spotify-tui
     obsidian
 
     # misc
