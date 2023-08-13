@@ -30,7 +30,7 @@
       enable = true;
       package = pkgs.spotifyd.override { withMpris = true; };
       settings.global = {
-        username = "12124028573";
+        username = "kyerpotts@gmail.com";
         password = "StarTickler22";
         autoplay = true;
         backend = "pulseaudio";
