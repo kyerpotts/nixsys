@@ -22,7 +22,7 @@ in {
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
       "xprop -root -f _XWAYLAND_GLOBAL_OUTPUT_SCALE 32c -set _XWAYLAND_GLOBAL_OUTPUT_SCALE 2"
-      # "echo 'Xft.dpi: 130 | xrdb -merge"
+      "echo 'Xft.dpi: 130 | xrdb -merge"
       ];
       xwayland = { force_zero_scaling = true; };
       monitor = ", highres, auto, 1";

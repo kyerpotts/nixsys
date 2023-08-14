@@ -25,7 +25,6 @@
     xcolor
     htop
     blueberry
-    bluez
     networkmanager
     networkmanagerapplet
 

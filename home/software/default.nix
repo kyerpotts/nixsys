@@ -11,6 +11,7 @@
     ./git.nix
     ./gtk.nix
     ./packages.nix
+    ./spotify-player.nix
     ./qt.nix
 
     # Apps
