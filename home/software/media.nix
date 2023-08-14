@@ -11,6 +11,8 @@
     # images
     imv
 
+    spotify
+
   ];
 
   programs = {
