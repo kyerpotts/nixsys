@@ -21,6 +21,9 @@
       "hyprland/window"
     ];
     modules-right = [
+      "memory"
+      "cpu"
+      "disk"
       "battery"
       "pulseaudio"
       "bluetooth"
@@ -163,7 +166,7 @@
       on-click = "nm-applet";
     };
     bluetooth = {
-      format = "󰂯{status}";
+      format = "󰂯";
       format-disabled = "󰂲";
       format-connected = "󰂱";
       tooltip = false;
@@ -182,7 +185,7 @@
     };
     pulseaudio = {
       format = "{icon} {volume}%";
-      format-bluetooth = "{icon}󰂱 {volume}%";
+      format-bluetooth = "{icon} {volume}%";
       format-source = " {volume}%";
       format-muted = "󰝟";
       format-source-muted = " {volume}%";

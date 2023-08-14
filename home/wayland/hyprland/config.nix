@@ -21,14 +21,15 @@ in {
       "xwaylandvideobridge"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
-      "xprop -root -f _XWAYLAND_GLOBAL_OUTPUT_SCALE 32c -set _XWAYLAND_GLOBAL_OUTPUT_SCALE 1"
-      "echo 'Xft.dpi: 130 | xrdb -merge"
+      # "xprop -root -f _XWAYLAND_GLOBAL_OUTPUT_SCALE 32c -set _XWAYLAND_GLOBAL_OUTPUT_SCALE 1"
+      # "echo 'Xft.dpi: 130 | xrdb -merge"
       ];
       xwayland = { force_zero_scaling = true; };
-      monitor = [
-        ",preferred,auto,auto"
-        "eDP-1,1920x1080@60,0x0,1"
-      ];
+      monitor = ", highres, auto, 1";
+      # monitor = [
+      #   ",preferred,auto,auto"
+      #   "eDP-1,1920x1080@60,0x0,1"
+      # ];
       input = {
         kb_layout = "us";
         # focus change on cursor move
