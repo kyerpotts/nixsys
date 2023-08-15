@@ -169,9 +169,6 @@ in {
 
       # Media Controls
       bindl = [
-        "$MOD , ?, exec, playerctl play-pause"
-        "$MOD , <, exec, playerctl play-previous"
-        "$MOD , >, exec, playerctl play-next"
         " , XF86AudioPlay, exec, playerctl play-pause"
         " , XF86AudioPrev, exec, playerctl previous"
         " , XF86AudioNext, exec, playerctl next"
