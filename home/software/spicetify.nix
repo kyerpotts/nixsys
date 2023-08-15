@@ -9,7 +9,7 @@
     sidebarConfig = true;
     enabledCustomApps = with spicePkgs.apps; [ lyrics-plus new-releases ];
     theme = spicePkgs.themes.Sleek;
-    colorScheme = "elementary";
+    colorScheme = "ultrablack";
     enabledExtensions = with spicePkgs.extensions; [
       hidePodcasts
       shuffle
