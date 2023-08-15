@@ -25,7 +25,7 @@
       name = "Catppuccin-Mocha-Compact-Mauve-dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "mauve" ];
-        size = "compact";
+        size = "standard";
         variant = "mocha";
       };
     };
