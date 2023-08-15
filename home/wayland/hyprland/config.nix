@@ -197,11 +197,11 @@ in {
         "opacity 0.80 0.70,class:^(pavucontrol)$"
         "opacity 0.80 0.70,class:^(org.kde.polkit-kde-authentication-agent-1)$"
         "opacity 0.80 0.80,class:^(code-url-handler)$"
-        "opacity 0.80 0.80,class:^(blueberry)$"
+        "opacity 0.80 0.80,class:^(bluetooth)$"
         # "opacity 0.80 0.80,title:^(Spotify)$"
 
         "float,class:^(org.kde.polkit-kde-authentication-agent-1)$"
-        "float,class:^(blueberry)$"
+        "float,class:^(bluetooth)$"
         "float,class:^(pavucontrol)$"
         "float,title:^(Media viewer)$"
         "float,title:^(Volume Control)$"
