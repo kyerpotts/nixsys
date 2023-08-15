@@ -13,6 +13,7 @@
     ./packages.nix
     # ./spotify-player.nix
     ./qt.nix
+    ./spicetify.nix
 
     # Apps
     ./webcord/default.nix

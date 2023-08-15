@@ -114,7 +114,7 @@
         Stopped = "<span> </span>";
       };
     };
-    "custom/playerctl#foward"= {
+    "custom/playerctl#forward"= {
       format= "󰙡 ";
       on-click= "playerctl next";
       on-scroll-up = "playerctl volume .05+";

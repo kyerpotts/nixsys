@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 # media - control and enjoy audio/video
 {
-  imports = [ ./rnnoise.nix ];
+  imports = [ ./rnnoise.nix ./spicetify.nix ];
 
   home.packages = with pkgs; [
     # audio control
@@ -11,7 +11,7 @@
     # images
     imv
 
-    spotify
+    # spotify
 
   ];
 
