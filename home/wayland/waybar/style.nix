@@ -167,9 +167,9 @@ in ''
   }
 
   #custom-playerctl {
-  	background: #0c0e0f;
+  	background: transparent;
     padding: 0px 5px 0px 10px;
-  	border-radius: 16px;
+  	border-radius: 8px;
     /*border-left: solid 1px #282738;*/
     /*border-right: solid 1px #282738;*/
     margin: 5px 7px;
