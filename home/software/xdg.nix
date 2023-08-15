@@ -16,14 +16,13 @@ let
     "x-scheme-handler/https" = browser;
     "x-scheme-handler/unknown" = browser;
 
-    "audio/*" = [ "vlc.desktop" ];
-    "video/*" = [ "vlc.dekstop" ];
+    "audio/*" = [ "mpv.desktop" ];
+    "video/*" = [ "mpv.dekstop" ];
     "image/*" = [ "imv.desktop" ];
     "application/json" = browser;
     "application/pdf" = [ "org.pwmt.zathura.desktop.desktop" ];
     "x-scheme-handler/discord" = [ "discordcanary.desktop" ];
-    #TODO: get this working with spotify-tui
-    # "x-scheme-handler/spotify" = [ "spotify.desktop" ];
+    "x-scheme-handler/spotify" = [ "spotify.desktop" ];
   };
 in {
   home.packages = [ pkgs.xdg-utils ];

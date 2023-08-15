@@ -14,6 +14,7 @@
     # ./spotify-player.nix
     ./qt.nix
     ./spicetify.nix
+    ./xdg.nix
 
     # Apps
     ./webcord/default.nix
