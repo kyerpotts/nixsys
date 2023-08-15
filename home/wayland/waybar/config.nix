@@ -15,10 +15,11 @@
       "custom/playerctl#play"
       "custom/playerctl#forward"
       "custom/playerlabel"
-      "cava#left"
+      # "cava#left"
     ];
     modules-center = [
-      "hyprland/window"
+      "cava#left"
+      # "hyprland/window"
     ];
     modules-right = [
       "memory"
