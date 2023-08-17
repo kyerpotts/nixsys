@@ -15,6 +15,7 @@
     ./qt.nix
     ./spicetify.nix
     ./xdg.nix
+    ./zathura.nix
 
     # Apps
     ./webcord/default.nix
