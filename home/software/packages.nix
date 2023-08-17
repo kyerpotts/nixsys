@@ -11,7 +11,7 @@
     ps_mem
     pulseaudio
     obsidian
-    calibre
+    # calibre
 
     # misc
     libnotify
