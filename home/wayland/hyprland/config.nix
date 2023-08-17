@@ -125,7 +125,7 @@ in {
         "$MOD, N, exec, webcord"
         "$MOD, M, exec, spotify"
         "$MOD, O, exec, obsidian"
-        "$MOD, E, exec, run-as-service ${default.terminal.name} -e lf"
+        "$MOD, E, exec, ${default.terminal.name} -e lf"
 
         "$MODSHIFT, L, exec, loginctl lock-session"
         "$MOD, Q, killactive"
