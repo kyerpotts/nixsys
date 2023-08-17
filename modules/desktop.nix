@@ -64,13 +64,13 @@
   programs = {
     # make HM-managed GTK stuff work
     dconf.enable = true;
-    # seahorse.enable = true;
+    seahorse.enable = true;
   };
 
   services = {
     # provide location
     # geoclue2.enable = true;
-    gnome.gnome-keyring.enable = true;
+    # gnome.gnome-keyring.enable = true;
 
     xserver = {
       enable = true;
