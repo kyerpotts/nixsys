@@ -1,5 +1,6 @@
 { pkgs, config, ... }: {
   imports = [
+    ./astronvim
     ../shell/nix.nix
     ./wezterm.nix
     ./cava.nix
@@ -11,7 +12,6 @@
     ./git.nix
     ./gtk.nix
     ./packages.nix
-    # ./spotify-player.nix
     ./qt.nix
     ./spicetify.nix
     ./xdg.nix
@@ -26,11 +26,11 @@
       enable = true;
     };
 
-    neovim = {
-      enable = true;
-      viAlias = true;
-      vimAlias = true;
-    };
+    # neovim = {
+    #  enable = true;
+    #  viAlias = true;
+    #  vimAlias = true;
+    # };
 
     gpg = {
       enable = true;

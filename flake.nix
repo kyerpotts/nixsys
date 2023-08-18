@@ -72,6 +72,11 @@
       url = "github:the-argus/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    astronvim = {
+      url = "github:AstroNvim/AstroNvim/v3.36.0";
+      flake = false;
+    };
   };
 
   # nixConfig = {
