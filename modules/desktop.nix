@@ -70,7 +70,7 @@
   services = {
     # provide location
     # geoclue2.enable = true;
-    # gnome.gnome-keyring.enable = true;
+    gnome.gnome-keyring.enable = true;
 
     xserver = {
       enable = true;
