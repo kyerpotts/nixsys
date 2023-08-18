@@ -1,6 +1,6 @@
 { pkgs, config, ... }: {
   imports = [
-    ./astronvim
+    # ./astronvim
     ../shell/nix.nix
     ./wezterm.nix
     ./cava.nix
