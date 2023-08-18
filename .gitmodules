@@ -1,9 +1,0 @@
-[submodule "home/software/home/software/astronvim/astronvim_user/astronvim_config"]
-	path = home/software/home/software/astronvim/astronvim_user/astronvim_config
-	url = git@github.com:kyerpotts/astronvim_config.git
-[submodule "home/software/astronvim/astronvim_user/astronvim_config"]
-	path = home/software/astronvim/astronvim_user/astronvim_config
-	url = git@github.com:kyerpotts/astronvim_config.git
-[submodule "home/software/astronvim/astronvim_config"]
-	path = home/software/astronvim/astronvim_config
-	url = git@github.com:kyerpotts/astronvim_config.git
