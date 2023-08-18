@@ -75,6 +75,7 @@
 
     astronvim = {
       url = "github:AstroNvim/AstroNvim/v3.36.0";
+      inputs.home-manager.follows = "hm";
       flake = false;
     };
   };
