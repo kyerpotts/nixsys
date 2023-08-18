@@ -3,6 +3,7 @@
   environment.systemPackages = [
     # git is a requirement for flakes
     pkgs.gitFull
+    pkgs.libsecret
     inputs'.nh.packages.default
   ];
   # this may or may not need to be uncommented to work
