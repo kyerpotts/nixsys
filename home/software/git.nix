@@ -24,7 +24,7 @@
       merge.conflictstyle = "diff3";
       credential.helper = "${
         pkgs.git.override { withLibsecret = true; }
-      } /bin/git-credential-libsecret";
+      }/bin/git-credential-libsecret";
     };
 
     aliases = {
