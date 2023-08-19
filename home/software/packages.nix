@@ -4,7 +4,7 @@
     #webcord
 
     pavucontrol
-    neovim-unwrapped
+    # neovim-unwrapped
     betterdiscordctl
     xfce.thunar
     xfce.thunar-archive-plugin

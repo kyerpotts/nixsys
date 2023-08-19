@@ -7,7 +7,7 @@
 #
 #  AstroNvim's configuration and all its dependencies(lsp, formatter, etc.)
 #
-###############################################################################
+#e#############################################################################
 {
   xdg.configFile = {
     # astronvim's config
@@ -15,7 +15,7 @@
 
     # my custom astronvim config, astronvim will load it after base config
     # https://github.com/AstroNvim/AstroNvim/blob/v3.32.0/lua/astronvim/bootstrap.lua#L15-L16
-    "astronvim/lua/user".source = ./astronvim_config;
+    "astronvim/lua/user".source = ./astronvim_user;
   };
 
   nixpkgs.config = {
@@ -29,7 +29,7 @@
       enable = true;
       defaultEditor = true;
 
-      viAlias = true;
+      viAlias = false;
       vimAlias = true;
 
       withPython3 = true;
@@ -37,10 +37,10 @@
       extraPackages = with pkgs; [];
 
       # currently we use lazy.nvim as neovim's package manager, so comment this one.
-      # plugins = with pkgs.vimPlugins; [
+      plugins = with pkgs.vimPlugins; [
         # search all the plugins using https://search.nixos.org/packages
-        # luasnip
-      # ];
+        luasnip
+      ];
     };
   };
   home = {
@@ -58,7 +58,7 @@
       #-- python
       nodePackages.pyright # python language server
       python311Packages.black # python formatter
-      # python311Packages.ruff-lsp
+      python311Packages.ruff-lsp
 
       #-- rust
       rust-analyzer
@@ -66,7 +66,7 @@
       rustfmt
 
       #-- zig
-      # zls
+      zls
 
       #-- nix
       nil
@@ -77,13 +77,13 @@
       alejandra # Nix Code Formatter
 
       #-- golang
-      # go
-      # gomodifytags
-      # iferr # generate error handling code for go
-      # impl # generate function implementation for go
-      # gotools # contains tools like: godoc, goimports, etc.
-      # gopls # go language server
-      # delve # go debugger
+      go
+      gomodifytags
+      iferr # generate error handling code for go
+      impl # generate function implementation for go
+      gotools # contains tools like: godoc, goimports, etc.
+      gopls # go language server
+      delve # go debugger
 
       #-- lua
       stylua
@@ -102,20 +102,20 @@
       nodePackages."@tailwindcss/language-server"
 
       #-- CloudNative
-      # nodePackages.dockerfile-language-server-nodejs
-      # terraform
-      # terraform-ls
-      # jsonnet
-      # jsonnet-language-server
-      # hadolint # Dockerfile linter
+      nodePackages.dockerfile-language-server-nodejs
+      terraform
+      terraform-ls
+      jsonnet
+      jsonnet-language-server
+      hadolint # Dockerfile linter
 
       #-- Others
-      # taplo # TOML language server / formatter / validator
+      taplo # TOML language server / formatter / validator
       nodePackages.yaml-language-server
       sqlfluff # SQL linter
-      # actionlint # GitHub Actions linter
+      actionlint # GitHub Actions linter
       buf # protoc plugin for linting and formatting
-      # proselint # English prose linter
+      proselint # English prose linter
 
       #-- Misc
       tree-sitter # common language parser/highlighter
