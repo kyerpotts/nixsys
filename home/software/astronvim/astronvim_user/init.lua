@@ -306,7 +306,7 @@ return {
             formatting.prettier,                 -- js/ts/vue/css/html/json/... formatter
             diagnostics.hadolint,                -- Dockerfile linter
             formatting.black,                    -- Python formatter
-            formatting.ruff_lsp,                 -- extremely fast Python linter
+            -- formatting.ruff_lsp,                 -- extremely fast Python linter
             formatting.goimports,                -- Go formatter
             formatting.shfmt,                    -- Shell formatter
             formatting.rustfmt,                  -- Rust formatter
