@@ -10,7 +10,7 @@ local sections = {
   j = { desc = " Java Test" },
 }
 
-require("telescope").load_extension("refactoring")
+-- require("telescope").load_extension("refactoring")
 require("telescope").load_extension("yank_history")
 require("telescope").load_extension("undo")
 
@@ -34,9 +34,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(
-          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
-        )
+        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
+          require("astronvim.utils.buffer").close(bufnr)
+        end)
       end,
       desc = "Pick to close",
     },
@@ -49,11 +49,15 @@ return {
     ["]b"] = false,
     ["[b"] = false,
     ["L"] = {
-      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      function()
+        require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1)
+      end,
       desc = "Next buffer",
     },
     ["H"] = {
-      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      function()
+        require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1))
+      end,
       desc = "Previous buffer",
     },
 
@@ -68,8 +72,18 @@ return {
       false,
       sections.j,
     },
-    ["<leader>djt"] = { function() require("jdtls").test_class() end, desc = "Class" },
-    ["<leader>djn"] = { function() require("jdtls").test_nearest_method() end, desc = "Nearest Method" },
+    ["<leader>djt"] = {
+      function()
+        require("jdtls").test_class()
+      end,
+      desc = "Class",
+    },
+    ["<leader>djn"] = {
+      function()
+        require("jdtls").test_nearest_method()
+      end,
+      desc = "Nearest Method",
+    },
 
     ["<leader>tp"] = {
       function()
@@ -87,9 +101,9 @@ return {
     ["<Tab>"] = {
       function()
         if #vim.t.bufs > 1 then
-          require("telescope.builtin").buffers { sort_mru = true, ignore_current_buffer = true }
+          require("telescope.builtin").buffers({ sort_mru = true, ignore_current_buffer = true })
         else
-          require("astronvim.utils").notify "No other buffers open"
+          require("astronvim.utils").notify("No other buffers open")
         end
       end,
     },
@@ -101,12 +115,42 @@ return {
       -- Create harpoon section
       sections.h,
     },
-    ["<leader>ha"] = { function() require("harpoon.mark").add_file() end, desc = "Add Mark" },
-    ["<leader>hb"] = { function() require("harpoon.ui").toggle_quick_menu() end, desc = "List" },
-    ["<leader>hh"] = { function() require("harpoon.ui").nav_file(1) end, desc = "Mark 1" },
-    ["<leader>hj"] = { function() require("harpoon.ui").nav_file(2) end, desc = "Mark 2" },
-    ["<leader>hk"] = { function() require("harpoon.ui").nav_file(3) end, desc = "Mark 3" },
-    ["<leader>hl"] = { function() require("harpoon.ui").nav_file(4) end, desc = "Mark 4" },
+    ["<leader>ha"] = {
+      function()
+        require("harpoon.mark").add_file()
+      end,
+      desc = "Add Mark",
+    },
+    ["<leader>hb"] = {
+      function()
+        require("harpoon.ui").toggle_quick_menu()
+      end,
+      desc = "List",
+    },
+    ["<leader>hh"] = {
+      function()
+        require("harpoon.ui").nav_file(1)
+      end,
+      desc = "Mark 1",
+    },
+    ["<leader>hj"] = {
+      function()
+        require("harpoon.ui").nav_file(2)
+      end,
+      desc = "Mark 2",
+    },
+    ["<leader>hk"] = {
+      function()
+        require("harpoon.ui").nav_file(3)
+      end,
+      desc = "Mark 3",
+    },
+    ["<leader>hl"] = {
+      function()
+        require("harpoon.ui").nav_file(4)
+      end,
+      desc = "Mark 4",
+    },
 
     -- Trouble Mappings
     ["<leader>x"] = {
@@ -122,7 +166,9 @@ return {
     ["<leader>xt"] = { "<cmd>TodoTrouble<cr>", desc = "TODO's" },
     -- Remap Themes to uppercase T
     ["<leader>fT"] = {
-      function() require("telescope.builtin").colorscheme { enable_preview = true } end,
+      function()
+        require("telescope.builtin").colorscheme({ enable_preview = true })
+      end,
       desc = "Find themes",
     },
     -- find TODO's through telescope bound to lowercase t
@@ -130,7 +176,12 @@ return {
 
     -- Undotree Mapping
     ["<leader>r"] = { "<cmd>UndotreeToggle<cr>", desc = "Undotree" },
-    ["<leader>fu"] = { function() require("telescope").extensions.undo.undo() end, desc = "Undotree" },
+    ["<leader>fu"] = {
+      function()
+        require("telescope").extensions.undo.undo()
+      end,
+      desc = "Undotree",
+    },
 
     -- Zen Mode
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "󱌿 Zen Mode" },
@@ -203,7 +254,10 @@ return {
     ["<leader>hu"] = { "<cmd>Telescope undo<cr>", desc = "Telescope undo" },
 
     -- implementation/definition preview
-    ["<leader>lgd"] = { "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", desc = "goto_preview_definition" },
+    ["<leader>lgd"] = {
+      "<cmd>lua require('goto-preview').goto_preview_definition()<CR>",
+      desc = "goto_preview_definition",
+    },
     ["<leader>lgt"] = {
       "<cmd>lua require('goto-preview').goto_preview_type_definition()<CR>",
       desc = "goto_preview_type_definition",
@@ -213,7 +267,10 @@ return {
       desc = "goto_preview_implementation",
     },
     ["<leader>lgP"] = { "<cmd>lua require('goto-preview').close_all_win()<CR>", desc = "close_all_win" },
-    ["<leader>lgr"] = { "<cmd>lua require('goto-preview').goto_preview_references()<CR>", desc = "goto_preview_references" },
+    ["<leader>lgr"] = {
+      "<cmd>lua require('goto-preview').goto_preview_references()<CR>",
+      desc = "goto_preview_references",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
