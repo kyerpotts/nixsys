@@ -7,7 +7,7 @@
 #
 #  AstroNvim's configuration and all its dependencies(lsp, formatter, etc.)
 #
-#e#############################################################################
+###############################################################################
 {
   xdg.configFile = {
     # astronvim's config
@@ -58,7 +58,7 @@
       #-- python
       nodePackages.pyright # python language server
       python311Packages.black # python formatter
-      ruff-lsp
+      # ruff-lsp
       # python311Packages.ruff-lsp
 
       #-- rust
