@@ -18,14 +18,15 @@ return {
     -- Highly experimental plugin that completely replaces
     -- the UI for messages, cmdline and the popupmenu.
     { import = "astrocommunity.utility.noice-nvim" },
-    -- Fully featured & enhanced replacement for copilot.vim
     -- <Tab> work with both auto completion in cmp and copilot
     { import = "astrocommunity.media.vim-wakatime" },
     { import = "astrocommunity.motion.leap-nvim" },
     { import = "astrocommunity.motion.flit-nvim" },
+    { import = "astrocommunity.motion.harpoon" },
     { import = "astrocommunity.scrolling.nvim-scrollbar" },
     { import = "astrocommunity.editing-support.auto-save-nvim" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
+    { import = "astrocommunity.editing-support.zen-mode-nvim" },
     -- Language Support
     ---- Frontend & NodeJS
     { import = "astrocommunity.pack.typescript-all-in-one" },
@@ -55,11 +56,13 @@ return {
     -- Motion
     { import = "astrocommunity.motion.mini-surround" },
     -- https://github.com/echasnovski/mini.ai
-    { import = "astrocommunity.motion.mini-ai" },
+    -- { import = "astrocommunity.motion.mini-ai" },
     { import = "astrocommunity.motion.flash-nvim" },
     { "folke/flash.nvim", vscode = false },
     -- Lua implementation of CamelCaseMotion, with extra consideration of punctuation.
     { import = "astrocommunity.motion.nvim-spider" },
+    -- Diagnostics support
+    { import = "astrocommunity.diagnostics.trouble-nvim" },
     -- AI Assistant
     { import = "astrocommunity.completion.copilot-lua-cmp" },
     -- Custom copilot-lua to enable filtypes: markdown
@@ -139,14 +142,14 @@ return {
     },
 
     -- joining blocks of code into oneline, or splitting one line into multiple lines.
-    {
-      'Wansmer/treesj',
-      keys = { '<space>m', '<space>j', '<space>s' },
-      dependencies = { 'nvim-treesitter/nvim-treesitter' },
-      config = function()
-        require('treesj').setup({--[[ your config ]]})
-      end,
-    },
+    -- {
+    --   'Wansmer/treesj',
+    --   keys = { '<space>m', '<space>j', '<space>s' },
+    --   dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    --   config = function()
+    --     require('treesj').setup({--[[ your config ]]})
+    --   end,
+    -- },
 
     -- File explorer(Custom configs)
     {
@@ -162,20 +165,20 @@ return {
       }
     },
     -- The plugin offers the alibity to refactor code.
-    {
-      "ThePrimeagen/refactoring.nvim",
-      dependencies = {
-        {"nvim-lua/plenary.nvim"},
-        {"nvim-treesitter/nvim-treesitter"}
-      }
-    },
+    -- {
+    --   "ThePrimeagen/refactoring.nvim",
+    --   dependencies = {
+    --     {"nvim-lua/plenary.nvim"},
+    --     {"nvim-treesitter/nvim-treesitter"}
+    --   }
+    -- },
     -- The plugin offers the abilibty to search and replace.
-    {
-      "nvim-pack/nvim-spectre",
-      dependencies = {
-        {"nvim-lua/plenary.nvim"},
-      }
-    },
+    -- {
+    --   "nvim-pack/nvim-spectre",
+    --   dependencies = {
+    --     {"nvim-lua/plenary.nvim"},
+    --   }
+    -- },
 
     -- full signature help, docs and completion for the nvim lua API.
     { "folke/neodev.nvim", opts = {} },
@@ -221,6 +224,7 @@ return {
 
     -- Undo tree
     { "debugloop/telescope-undo.nvim", },
+    { "mbbill/undotree", cmd = { "UndotreeToggle" } },
 
     -- Install lsp, formmatter and others via home manager instead of Mason.nvim
     -- LSP installations
@@ -408,10 +412,10 @@ return {
       format_on_save = {
         enabled = true,
         allow_filetypes = {
-          "go",
-          "jsonnet",
-          "rust",
-          "terraform",
+          -- "go",
+          -- "jsonnet",
+          -- "rust",
+          -- "terraform",
         },
       },
     },
