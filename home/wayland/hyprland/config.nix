@@ -28,6 +28,7 @@ in {
         "echo 'Xft.dpi: 130 | xrdb -merge"
       ];
       xwayland = {force_zero_scaling = true;};
+      env = "GDK_SCALE, 2";
       monitor = ", highres, auto, 1";
       # monitor = [
       #   ",preferred,auto,auto"
