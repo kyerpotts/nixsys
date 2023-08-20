@@ -5,7 +5,7 @@
 -- automatically pick-up stored data by this setting.)
 local utils = require("astronvim.utils")
 local sections = {
-  h = { desc = "󰩷 Harpoon" },
+  -- h = { desc = "󰩷 Harpoon" },
   x = { desc = " Trouble" },
   j = { desc = " Java Test" },
 }
@@ -96,6 +96,7 @@ return {
     -- Split screen
     ["\\"] = false,
     ["<leader>_"] = { "<cmd>split<cr>", desc = "Horizontal Split" },
+    ["<leader>|"] = { "<cmd>vsplit<cr>", desc = "Vertical Split" },
 
     -- Telescope buffer switching
     ["<Tab>"] = {
@@ -109,48 +110,48 @@ return {
     },
 
     -- Harpoon Mappings
-    ["<leader>h"] = {
-      -- Unmap homescreen
-      false,
-      -- Create harpoon section
-      sections.h,
-    },
-    ["<leader>ha"] = {
-      function()
-        require("harpoon.mark").add_file()
-      end,
-      desc = "Add Mark",
-    },
-    ["<leader>hb"] = {
-      function()
-        require("harpoon.ui").toggle_quick_menu()
-      end,
-      desc = "List",
-    },
-    ["<leader>hh"] = {
-      function()
-        require("harpoon.ui").nav_file(1)
-      end,
-      desc = "Mark 1",
-    },
-    ["<leader>hj"] = {
-      function()
-        require("harpoon.ui").nav_file(2)
-      end,
-      desc = "Mark 2",
-    },
-    ["<leader>hk"] = {
-      function()
-        require("harpoon.ui").nav_file(3)
-      end,
-      desc = "Mark 3",
-    },
-    ["<leader>hl"] = {
-      function()
-        require("harpoon.ui").nav_file(4)
-      end,
-      desc = "Mark 4",
-    },
+    -- ["<leader>h"] = {
+    --   -- Unmap homescreen
+    --   false,
+    --   -- Create harpoon section
+    --   sections.h,
+    -- },
+    -- ["<leader>ha"] = {
+    --   function()
+    --     require("harpoon.mark").add_file()
+    --   end,
+    --   desc = "Add Mark",
+    -- },
+    -- ["<leader>hb"] = {
+    --   function()
+    --     require("harpoon.ui").toggle_quick_menu()
+    --   end,
+    --   desc = "List",
+    -- },
+    -- ["<leader>hh"] = {
+    --   function()
+    --     require("harpoon.ui").nav_file(1)
+    --   end,
+    --   desc = "Mark 1",
+    -- },
+    -- ["<leader>hj"] = {
+    --   function()
+    --     require("harpoon.ui").nav_file(2)
+    --   end,
+    --   desc = "Mark 2",
+    -- },
+    -- ["<leader>hk"] = {
+    --   function()
+    --     require("harpoon.ui").nav_file(3)
+    --   end,
+    --   desc = "Mark 3",
+    -- },
+    -- ["<leader>hl"] = {
+    --   function()
+    --     require("harpoon.ui").nav_file(4)
+    --   end,
+    --   desc = "Mark 4",
+    -- },
 
     -- Trouble Mappings
     ["<leader>x"] = {
