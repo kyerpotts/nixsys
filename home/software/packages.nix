@@ -52,5 +52,6 @@
     # python
     python311
     python311Packages.pip
+    conda
   ];
 }
