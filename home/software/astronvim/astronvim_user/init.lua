@@ -24,10 +24,9 @@ return {
     { import = "astrocommunity.motion.flit-nvim" },
     { import = "astrocommunity.motion.harpoon" },
     { import = "astrocommunity.scrolling.nvim-scrollbar" },
-    -- { import = "astrocommunity.editing-support.auto-save-nvim" },
+    { import = "astrocommunity.editing-support.auto-save-nvim" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
     { import = "astrocommunity.editing-support.zen-mode-nvim" },
-    -- Language Support
     ---- Frontend & NodeJS
     { import = "astrocommunity.pack.typescript-all-in-one" },
     { import = "astrocommunity.pack.tailwindcss" },
@@ -440,7 +439,7 @@ return {
     formatting = {
       disabled = {},
       format_on_save = {
-        enabled = true,
+        enabled = false,
         allow_filetypes = {
           -- "go",
           -- "jsonnet",
