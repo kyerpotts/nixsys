@@ -118,7 +118,8 @@ in {
         "$MOD, V, exec, $NOTIFY 'Recording started'"
         "$MODSHIFT, V, exec, killall -s SIGINT wf-recorder"
         "$MODSHIFT, V, exec, $NOTIFY 'Recording stopped'"
-        "$MODSHIFT, P, exec, $SCREENSHOT"
+        "$MODSHIFT, X, exec, $SCREENSHOT"
+        "$MODSHIFT, X, exec, $NOTIFY 'Screenshot taken'"
 
         "$MOD, D, exec, pkill .${default.launcher}-wrapped || run-as-service ${default.launcher}"
         "$MOD, Return, exec, run-as-service ${default.terminal.name}"
