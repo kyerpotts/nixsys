@@ -28,6 +28,7 @@
     blueberry
     networkmanager
     networkmanagerapplet
+    realvnc-vnc-viewer
 
     glow
     # libsixel # image support for foot
