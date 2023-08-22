@@ -110,7 +110,7 @@ in {
 
       "$VIDEODIR" = "$HOME/Videos";
       "$NOTIFY" = "notify-send -h string:x-canonical-private-synchonouse:hypr-cfg -u low";
-      "$SCREENSHOT" = "mkdir -p ~/Screenshots; grim -t png -g \"$(slurp)\" ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png";
+      "$SCREENSHOT" = "mkdir -p ~/Screenshots; grim -t png -g \"$(slurp)\" ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png $NOTIFY 'Screenshot taken'";
 
       bind = [
         "$MOD, Escape, exec, wlogout -p layer-shell"
@@ -119,7 +119,7 @@ in {
         "$MODSHIFT, V, exec, killall -s SIGINT wf-recorder"
         "$MODSHIFT, V, exec, $NOTIFY 'Recording stopped'"
         "$MODSHIFT, X, exec, $SCREENSHOT"
-        "$MODSHIFT, X, exec, $NOTIFY 'Screenshot taken'"
+        # "$MODSHIFT, X, exec, $NOTIFY 'Screenshot taken'"
 
         "$MOD, D, exec, pkill .${default.launcher}-wrapped || run-as-service ${default.launcher}"
         "$MOD, Return, exec, run-as-service ${default.terminal.name}"
