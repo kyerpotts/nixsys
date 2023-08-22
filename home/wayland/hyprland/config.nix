@@ -110,7 +110,7 @@ in {
 
       "$VIDEODIR" = "$HOME/Videos";
       "$NOTIFY" = "notify-send -h string:x-canonical-private-synchonouse:hypr-cfg -u low";
-      "$SCREENSHOT" = "mkdir -p ~/Screenshots; grim -t png -g '$(slurp)' ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png";
+      "$SCREENSHOT" = "mkdir -p ~/Screenshots; grim -t png -g \"$(slurp)\" ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png";
 
       bind = [
         "$MOD, Escape, exec, wlogout -p layer-shell"
