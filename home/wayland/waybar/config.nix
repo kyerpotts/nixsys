@@ -1,5 +1,11 @@
-{ config, pkgs, lib, osConfig, default, ... }:
 {
+  config,
+  pkgs,
+  lib,
+  osConfig,
+  default,
+  ...
+}: {
   mainBar = {
     position = "top";
     layer = "top";
@@ -47,11 +53,11 @@
       on-scroll-down = "hyprctl dispatch workspace e+1";
       format = "{name}";
       on-click = "activate";
+      sort-by-number = true;
       format-icons = {
         urgent = "";
         active = "";
         default = "";
-        sort-by-number = true;
       };
     };
     "hyprland/window" = {
@@ -95,39 +101,39 @@
       tooltip = "false";
     };
     "custom/playerctl#backward" = {
-      format= "󰙣 ";
-      on-click= "playerctl previous";
+      format = "󰙣 ";
+      on-click = "playerctl previous";
       on-scroll-up = "playerctl volume .5+";
       on-scroll-down = "playerctl volume .5-";
       tooltip = "false";
     };
-    "custom/playerctl#play"= {
-      format= "{icon}";
-      return-type= "json";
-      exec= "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
-      on-click= "playerctl play-pause";
+    "custom/playerctl#play" = {
+      format = "{icon}";
+      return-type = "json";
+      exec = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
+      on-click = "playerctl play-pause";
       on-scroll-up = "playerctl volume .05+";
       on-scroll-down = "playerctl volume .05-";
       tooltip = "false";
-      format-icons= {
+      format-icons = {
         Playing = "<span>󰏥 </span>";
         Paused = "<span> </span>";
         Stopped = "<span> </span>";
       };
     };
-    "custom/playerctl#forward"= {
-      format= "󰙡 ";
-      on-click= "playerctl next";
+    "custom/playerctl#forward" = {
+      format = "󰙡 ";
+      on-click = "playerctl next";
       on-scroll-up = "playerctl volume .05+";
       on-scroll-down = "playerctl volume .05-";
       tooltip = "false";
     };
-    "custom/playerlabel"= {
-      format= "<span>󰎈 {} 󰎈</span>";
-      return-type= "json";
-      max-length= 40;
+    "custom/playerlabel" = {
+      format = "<span>󰎈 {} 󰎈</span>";
+      return-type = "json";
+      max-length = 40;
       exec = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
-      on-click= "";
+      on-click = "";
       tooltip = "false";
     };
     battery = {
@@ -140,7 +146,7 @@
       format-charging = " {icon} {capacity}%";
       format-plugged = " {icon} {capacity}%";
       format-alt = "{icon} {time}";
-      format-icons = [ "" "" "" "" "" ];
+      format-icons = ["" "" "" "" ""];
     };
     memory = {
       format = "󰍛 {}%";
@@ -171,7 +177,7 @@
       format-disabled = "󰂲";
       format-connected = "󰂱";
       tooltip = false;
-	    on-click = "blueberry";
+      on-click = "blueberry";
     };
     tray = {
       icon-size = 20;
@@ -180,7 +186,7 @@
     backlight = {
       device = "acpi_video1";
       format = "{icon} {percent}%";
-      format-icons = [ "" "" "" "" "" "" "" "" "" ];
+      format-icons = ["" "" "" "" "" "" "" "" ""];
       on-scroll-up = "brillo -q -u 300000 -A 5";
       on-scroll-down = "brillo -q -u 300000 -U 5";
     };
@@ -194,7 +200,7 @@
         headphone = "";
         hands-free = "";
         headset = "";
-        default = [ "󰕿" "󰖀" "󱄠" ];
+        default = ["󰕿" "󰖀" "󱄠"];
       };
       scroll-step = 1;
       on-click = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
