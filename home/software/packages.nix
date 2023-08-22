@@ -40,6 +40,9 @@
     rnix-lsp
     deno
 
+    # Dev Environments
+    devbox
+
     # Programming languages
     cargo
     gcc
@@ -53,5 +56,6 @@
     python311
     python311Packages.pip
     conda
+
   ];
 }
