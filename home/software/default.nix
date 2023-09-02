@@ -22,9 +22,9 @@
   ];
 
   programs = {
-    firefox = {
-      enable = true;
-    };
+    # firefox = {
+    #   enable = true;
+    # };
 
     # neovim = {
     #  enable = true;
