@@ -21,10 +21,10 @@
     ./webcord/default.nix
   ];
 
-  # programs = {
-  #   firefox = {
-  #     enable = true;
-  #   };
+  programs = {
+    firefox = {
+      enable = true;
+    };
 
     # neovim = {
     #  enable = true;
