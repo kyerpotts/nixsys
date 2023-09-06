@@ -28,11 +28,12 @@ in {
         "echo 'Xft.dpi: 130 | xrdb -merge"
       ];
       xwayland = {force_zero_scaling = true;};
-      monitor = ", highres, auto, 1";
-      # monitor = [
-      #   ",preferred,auto,auto"
-      #   "eDP-1,1920x1080@60,0x0,1"
-      # ];
+      # monitor = ", highres, auto, 1";
+      monitor = [
+        ",preferred,auto,auto"
+        "eDP-1,1920x1080@60,0x1080,1"
+        "HDMI-A-1,1920x1080@75,0x0,1"
+      ];
       input = {
         kb_layout = "us";
         # focus change on cursor move
